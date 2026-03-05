@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drum Kit</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="scen">
+
+    <header class="rubrik">
+      <h1 class="rubrik__titel">DRUM KIT</h1>
+      <p class="rubrik__tips">A · S · D &nbsp;|&nbsp; F · G · H · J &nbsp;|&nbsp; K · L</p>
+    </header>
+
+    <section class="trumset" aria-label="Trumset">
+
+      <!-- Cymbaler -->
+      <article class="rad rad--cymbaler">
+        <div class="cymbalstativ cymbalstativ--vanster">
+          <button class="trumpad cymbal hihat" data-sound="hihat">
+            <span class="trumpad__namn">Hi-hat</span>
+            <span class="trumpad__tangent">A</span>
+          </button>
+          <span class="stativ__stang"></span>
+        </div>
+        <div class="cymbalstativ cymbalstativ--mitten">
+          <button class="trumpad cymbal krasch" data-sound="crash">
+            <span class="trumpad__namn">Crash</span>
+            <span class="trumpad__tangent">S</span>
+          </button>
+          <span class="stativ__stang"></span>
+        </div>
+        <div class="cymbalstativ cymbalstativ--hoger">
+          <button class="trumpad cymbal ridecymbal" data-sound="ride">
+            <span class="trumpad__namn">Ride</span>
+            <span class="trumpad__tangent">D</span>
+          </button>
+          <span class="stativ__stang"></span>
+        </div>
+      </article>
+
+      <!-- Toms & Virvel -->
+      <article class="rad rad--toms">
+        <button class="trumpad tom tom--hog" data-sound="tom1">
+          <span class="trumpad__namn">Tom 1</span>
+          <span class="trumpad__tangent">F</span>
+        </button>
+        <button class="trumpad tom tom--mellan" data-sound="tom2">
+          <span class="trumpad__namn">Tom 2</span>
+          <span class="trumpad__tangent">G</span>
+        </button>
+        <button class="trumpad virvel" data-sound="snare">
+          <span class="trumpad__namn">Snare</span>
+          <span class="trumpad__tangent">H</span>
+        </button>
+        <button class="trumpad tom tom--golv" data-sound="tom3">
+          <span class="trumpad__namn">Floor</span>
+          <span class="trumpad__tangent">J</span>
+        </button>
+      </article>
+
+      <!-- Bas & Cowbell -->
+      <article class="rad rad--bas">
+        <button class="trumpad cowbell" data-sound="cowbell">
+          <span class="trumpad__namn">Cowbell</span>
+          <span class="trumpad__tangent">K</span>
+        </button>
+        <div class="bastrumma__montering">
+          <button class="trumpad bastrumma" data-sound="kick">
+            <span class="trumpad__namn">Kick</span>
+            <span class="trumpad__tangent">L</span>
+          </button>
+          <div class="bastrumma__ben">
+            <span class="ben ben--vanster"></span>
+            <span class="ben ben--hoger"></span>
+          </div>
+        </div>
+        <div class="platshallare"></div>
+      </article>
+
+    </section>
+  </main>
+  <script src="drums.js"></script>
+</body>
+</html>
