@@ -1,4 +1,4 @@
-const context = new AudioContext();
+const context = new (window.AudioContext || window.webkitAudioContext)();
 
 function resume() {
   if (context.state === 'suspended') context.resume();
