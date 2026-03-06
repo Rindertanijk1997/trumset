@@ -203,3 +203,42 @@ body {
 
 .platshallare { width: 54px; }
 
+
+
+/* ── Responsiv ── */
+@media (max-width: 600px) {
+  .rad--cymbaler { gap: 1rem; padding: 0; }
+  .rad--toms     { gap: 0.5rem; }
+  .rad--bas      { gap: 1rem; }
+
+  .hihat      { width: 60px; }
+  .krasch     { width: 80px; }
+  .ridecymbal { width: 90px; }
+
+  .cymbalstativ--vanster .stativ__stang { height: 36px; }
+  .cymbalstativ--mitten  .stativ__stang { height: 50px; }
+  .cymbalstativ--hoger   .stativ__stang { height: 28px; }
+
+  .tom--hog    { width: 66px;  height: 66px; }
+  .tom--mellan { width: 75px;  height: 75px; }
+  .tom--golv   { width: 88px;  height: 88px; }
+
+  .virvel  { width: 80px; height: 80px; }
+  .cowbell { width: 42px; height: 54px; margin-bottom: 12px; }
+
+  .bastrumma { width: 125px; height: 125px; }
+  .bastrumma__ben { width: 95px; }
+}
+
+@media (max-width: 380px) {
+  .hihat      { width: 50px; }
+  .krasch     { width: 66px; }
+  .ridecymbal { width: 75px; }
+
+  .tom--hog    { width: 55px; height: 55px; }
+  .tom--mellan { width: 63px; height: 63px; }
+  .tom--golv   { width: 74px; height: 74px; }
+
+  .virvel  { width: 68px; height: 68px; }
+  .bastrumma { width: 105px; height: 105px; }
+}
